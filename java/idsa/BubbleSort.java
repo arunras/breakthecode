@@ -18,6 +18,7 @@ public class BubbleSort {
     return A;
   }
 
+
   public static void main (String[] args) {
     int[] A = {8, 5, 9, 2, 4, 6, 3, 7, 1};
     System.out.println("Result: " + Arrays.toString(sortBubble(A)));  
