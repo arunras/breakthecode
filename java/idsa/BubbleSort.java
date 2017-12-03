@@ -1,11 +1,8 @@
-//package idsa;
-
 import java.util.Arrays;
 
 public class BubbleSort {
 
   public static int[] sortBubble(int[] A) {
-    int a, b, temp;
     for (int i = 0; i < A.length-1; i++) {
       for (int j = 0; j < A.length-1-i; j++) {
         if (A[j] > A[j+1]) {
