@@ -4,12 +4,9 @@ public class LinkedListDemo {
   public static void main(String[] args) {
     LinkedList list = new LinkedList();
 
-    list.insertAtHead(1);
-    list.insertAtHead(2);
-    list.insertAtHead(3);
-    list.insertAtHead(4);
-    list.insertAtHead(5);
-    list.insertAtHead(6);
+    for (int i = 0; i < 10; i++) {
+      list.insertAtHead(i+1);
+    }
 
     list.deleteFromHead();
 

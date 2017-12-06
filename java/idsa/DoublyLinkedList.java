@@ -11,7 +11,7 @@ public class DoublyLinkedList {
     }
     this.head = newNode; 
   }
-
+/*
   public DoublyLinkedNode[] sortDoublyLinkedList(DoublyLinkedNode[] list) {
     
     DoublyLinkedNode current = this.head;
@@ -33,7 +33,7 @@ public class DoublyLinkedList {
       }
     }
   }
-
+*/
   public int length() {
     if (head == null) {
       return 0;
