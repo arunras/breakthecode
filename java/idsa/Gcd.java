@@ -9,6 +9,6 @@ public class Gcd {
   }
 
   public static void main(String[] args) {
-    System.out.println("GCD: " + gcd(30, 10));
+    System.out.println("GCD: " + gcd(25, 10));
   }
 }
