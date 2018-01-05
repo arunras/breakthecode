@@ -10,7 +10,7 @@ import java.util.Map;
 import java.util.HashMap;
 import java.util.Arrays;
 
-public class twoSumArray {
+public class TwoSumArray {
   public int[] twoSum (int[] nums, int target) {
     Map <Integer, Integer> map = new HashMap <> ();
     int complement;
@@ -25,7 +25,7 @@ public class twoSumArray {
   }
 
   public static void main(String[] args) {
-    twoSumArray ts = new twoSumArray();
+    TwoSumArray ts = new TwoSumArray();
     int[] a = new int[] {2, 7, 11, 15};
     int target = 9;
     System.out.println("Result : " + Arrays.toString(ts.twoSum(a, target)));  

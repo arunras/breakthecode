@@ -6,7 +6,7 @@
 
 package lc;
 
-public class addTwoNumbers {
+public class AddTwoNumbers {
   
   class ListNode {
     int val;
@@ -17,11 +17,11 @@ public class addTwoNumbers {
     }
   }
 
-  public static addTwoNumbers.ListNode add2Numbers (addTwoNumbers.ListNode l1, addTwoNumbers.ListNode l2) {
-    addTwoNumbers atn = new addTwoNumbers();
-    addTwoNumbers.ListNode rHead = atn.new ListNode(0);
-    addTwoNumbers.ListNode p = l1, q = l2;
-    addTwoNumbers.ListNode current = rHead;
+  public static AddTwoNumbers.ListNode add2Numbers (AddTwoNumbers.ListNode l1, AddTwoNumbers.ListNode l2) {
+    AddTwoNumbers atn = new AddTwoNumbers();
+    AddTwoNumbers.ListNode rHead = atn.new ListNode(0);
+    AddTwoNumbers.ListNode p = l1, q = l2;
+    AddTwoNumbers.ListNode current = rHead;
     int carry = 0, sum = 0, reminder = 0;
     int x, y;
 
@@ -44,11 +44,11 @@ public class addTwoNumbers {
   }
 
   public static void main(String[] args) {
-    addTwoNumbers atn = new addTwoNumbers();
-    addTwoNumbers.ListNode l1 = atn.new ListNode(0);
-    addTwoNumbers.ListNode l2 = atn.new ListNode(0);
-    addTwoNumbers.ListNode list1 = l1;
-    addTwoNumbers.ListNode list2 = l2;
+    AddTwoNumbers atn = new AddTwoNumbers();
+    AddTwoNumbers.ListNode l1 = atn.new ListNode(0);
+    AddTwoNumbers.ListNode l2 = atn.new ListNode(0);
+    AddTwoNumbers.ListNode list1 = l1;
+    AddTwoNumbers.ListNode list2 = l2;
 
     int[] a1 = new int[] {2, 4, 5};
     int[] a2 = new int[] {5, 6, 4};
@@ -65,7 +65,7 @@ public class addTwoNumbers {
     }
     list2 = list2.next;
 
-    addTwoNumbers.ListNode rHead = add2Numbers(list1, list2);
+    AddTwoNumbers.ListNode rHead = add2Numbers(list1, list2);
 
     System.out.print("l1: [");
     while (list1 != null) {
