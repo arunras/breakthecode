@@ -18,7 +18,7 @@ public class addTwoNumbers {
   }
 
   public static addTwoNumbers.ListNode add2Numbers (addTwoNumbers.ListNode l1, addTwoNumbers.ListNode l2) {
-  		addTwoNumbers atn = new addTwoNumbers();
+  	addTwoNumbers atn = new addTwoNumbers();
     addTwoNumbers.ListNode rHead = atn.new ListNode(0);
     addTwoNumbers.ListNode p = l1, q = l2;
     addTwoNumbers.ListNode current = rHead;
@@ -49,15 +49,18 @@ public class addTwoNumbers {
     addTwoNumbers.ListNode l2 = atn.new ListNode(0);
     addTwoNumbers.ListNode list1 = l1;
     addTwoNumbers.ListNode list2 = l2;
-    
-    for (int i = 1; i < 4; i++) {
-      l1.next = atn.new ListNode(i*2);
+
+    int[] a1 = new int[] {2, 4, 5};
+    int[] a2 = new int[] {5, 6, 4};
+   
+    for (int i = 0; i < a1.length; i++) {
+      l1.next = atn.new ListNode(a1[i]);
       l1 = l1.next;
     }
     list1 = list1.next;
 
-    for (int j = 1; j < 4; j++) {
-      l2.next = atn.new ListNode(j*3);
+    for (int j = 0; j < a2.length; j++) {
+      l2.next = atn.new ListNode(a2[j]);
       l2 = l2.next;
     }
     list2 = list2.next;
