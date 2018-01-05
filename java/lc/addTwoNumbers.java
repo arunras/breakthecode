@@ -18,7 +18,7 @@ public class addTwoNumbers {
   }
 
   public static addTwoNumbers.ListNode add2Numbers (addTwoNumbers.ListNode l1, addTwoNumbers.ListNode l2) {
-  	addTwoNumbers atn = new addTwoNumbers();
+    addTwoNumbers atn = new addTwoNumbers();
     addTwoNumbers.ListNode rHead = atn.new ListNode(0);
     addTwoNumbers.ListNode p = l1, q = l2;
     addTwoNumbers.ListNode current = rHead;
