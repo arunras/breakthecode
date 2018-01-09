@@ -11,7 +11,7 @@ package lc;
 public class MedianOfTwoSortedArrays {
   
   public double findMedianSortedArrays(int[] A, int[] B) { 
-  		int m = A.length;
+    int m = A.length;
     int n = B.length;
   	  if (m > n) {
       return findMedianSortedArrays(B, A);
@@ -58,7 +58,7 @@ public class MedianOfTwoSortedArrays {
   public static void main(String[] args) {
     MedianOfTwoSortedArrays md = new MedianOfTwoSortedArrays();
     int[] A = new int[] {3, 4};
-    int[] B = new int[] {1, 2};    
+    int[] B = new int[] {1, 2, 5, 7, 8, 9};    
   
     System.out.println("Median is: " + md.findMedianSortedArrays(A, B));
 
