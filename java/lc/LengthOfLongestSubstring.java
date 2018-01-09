@@ -11,7 +11,6 @@ import java.util.Set;
 import java.util.HashSet;
 
 public class LengthOfLongestSubstring {
-
   public int lengthOfLongestSubstring(String s) {
     int maxLen = 0;
     int i = 0, j = 0;

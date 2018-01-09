@@ -7,7 +7,6 @@
 package lc;
 
 public class AddTwoNumbers {
-  
   class ListNode {
     int val;
     ListNode next;
@@ -24,7 +23,6 @@ public class AddTwoNumbers {
     AddTwoNumbers.ListNode current = rHead;
     int carry = 0, sum = 0, reminder = 0;
     int x, y;
-
     while (p != null || q !=null) {
       x = (p != null) ? p.val : 0;
       y = (q != null) ? q.val : 0;
@@ -33,7 +31,6 @@ public class AddTwoNumbers {
       reminder = sum % 10;
       current.next = atn.new ListNode(reminder);
       current = current.next;
-
       if (p != null) p = p.next;
       if (q != null) q = q.next;
     }
@@ -52,7 +49,7 @@ public class AddTwoNumbers {
 
     int[] a1 = new int[] {2, 4, 5};
     int[] a2 = new int[] {5, 6, 4};
-   
+
     for (int i = 0; i < a1.length; i++) {
       l1.next = atn.new ListNode(a1[i]);
       l1 = l1.next;
