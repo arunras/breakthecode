@@ -1,4 +1,4 @@
-package basic;
+package math;
 
 /**
  * Write a function int fib(int n) that returns Fn. 
