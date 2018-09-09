@@ -1,3 +1,7 @@
+/*
+ * Write a java program to count the number of words in a string?
+ */
+
 package string;
 
 public class CountWords {

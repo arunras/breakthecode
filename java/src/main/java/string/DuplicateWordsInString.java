@@ -1,3 +1,7 @@
+/*
+ *  Write a java program to find the duplicate words and their number of occurrences in a string?
+ */
+
 package string;
 
 import java.util.HashMap;

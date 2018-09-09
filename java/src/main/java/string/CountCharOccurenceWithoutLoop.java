@@ -1,3 +1,8 @@
+/*
+ * Write a java program to count the total number of occurrences of 
+ * a given character in a string without using any loop?
+ */
+
 package string;
 
 public class CountCharOccurenceWithoutLoop {
