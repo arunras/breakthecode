@@ -1,4 +1,4 @@
-package basic;
+package string;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,7 +17,6 @@ public class Regex {
 				sb.append(matcher.group());
 			}
 			
-			
 			for (int i = 0; i < str.length(); i++) {
 				if (matcher.find()) {
 					//conStr.append(matcher.group());
@@ -26,8 +25,6 @@ public class Regex {
 					//conStr.append(str.charAt(i));
 				}
 			}
-			
-			
 		}
 		return sb;
 	}
