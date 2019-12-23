@@ -1,3 +1,7 @@
+/*
+ * find the percentage of uppercase letters, lowercase letters, 
+ * digits and special characters in a given string?
+ */
 package string;
 
 import java.text.DecimalFormat;
