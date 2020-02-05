@@ -1,14 +1,15 @@
-import string.CharPercentage;
-import string.ProveStringImmutable;
+import leetcode.TwoSum;
+import java.util.Arrays;
 
 public class Main {
 	
 	public static void main(String[] args) {
-		
-		String str = "Tiger Runs @ The Speed Of 100 km/hour.";
-		String str1 = "My e-mail : eMail_Address321@anymail.com";
-		String str2 = "AUS : 123/3, 21.2 Overs";
-		
-		ProveStringImmutable.newString();
-	}	
+
+    int[] nums = {2, 7, 11, 15};
+    int target = Integer.parseInt(args[0]);
+    System.out.println("Array: " + Arrays.toString(nums));
+	  System.out.println("Result: " + Arrays.toString(TwoSum.twoSum2(nums, target)));
+				
+	}
+
 }
