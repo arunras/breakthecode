@@ -15,7 +15,7 @@ public class DuplicateWordsInString {
 		String[] words = str.split(" ");
 		
 		// create HashMap with word as key, and count as value
-		Map<String, Integer> wordMap = new HashMap<>();
+		Map<String, Integer> wordMap = new HashMap<String, Integer>();
 		
 		// checking each word
 		for (String w: words) {

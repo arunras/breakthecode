@@ -14,7 +14,7 @@ public class CountEachCharInString {
 
 	public static void count(String str) {
 		// create map to store each char as key, and occurrences as value
-		Map<Character, Integer> charCountMap = new HashMap<>();
+		Map<Character, Integer> charCountMap = new HashMap<Character, Integer>();
 		
 		// Convert given string to char array
 		char[] charArray = str.toUpperCase().toCharArray();
