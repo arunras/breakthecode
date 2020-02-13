@@ -1,3 +1,5 @@
+// Link: https://www.hackerrank.com/challenges/arrays-ds/problem
+
 package arrays;
 
 import java.util.Arrays;

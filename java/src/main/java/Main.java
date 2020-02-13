@@ -1,14 +1,21 @@
 import java.util.Arrays;
 
-import sorts.InsertionSort;
+import arrays.HourGlassSum;
 
 public class Main {
 	
 	public static void main(String[] args) {
 
-    int[] data = {55, 33, 44, 77, 22, 88, 66, 99, 11, 00};
+    int[][] data = {
+                    {1, 1, 1, 0, 0, 0},
+                    {0, 1, 0, 0, 0, 0},
+                    {1, 1, 1, 0, 0, 0},
+                    {0, 0, 2, 4, 4, 0},
+                    {0, 0, 0, 2, 0, 0},
+                    {0, 0, 1, 2, 4, 0},
+                    };
     System.out.println("Array: " + Arrays.toString(data));
-    System.out.println("Sorted: " + Arrays.toString(InsertionSort.sort1(data)));
+    System.out.println("Sorted: " + HourGlassSum.compute(data));
 				
 	}
 
