@@ -2,18 +2,18 @@ package sorts;
 
 public class InsertionSort {
 
-  // Approach1: Brute Force -> O(n2)
+  // Approach2: Insert into Subarray => O(n2)
   public static int[] sort(int[] data) {
-    for (int i=0; i<data.length-1; i++) {
-      for (int j=i+1; j>0; j--) {
-        if (data[j] < data[j-1]) {
-          int temp = data[j-1];
-          data[j-1] = data[j];
-          data[j] = temp;
-        }
+    for (int i = 1; i < data.length; i++) {
+      int key = data[i];
+      int j = i - 1;
+      while(j >= 0 && data[j] > key) {
+        data[j+1] = data[j];
+        j--;
       }
+      data[j+1] = key;
     }
-    return data;
+    return data; 
   }
   
 }
