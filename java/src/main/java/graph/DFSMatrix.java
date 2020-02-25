@@ -76,35 +76,31 @@ public class DFSMatrix {
     for (int i = 0; i <= 12; i++) {
       nodes.add(new Node(i));
     }
- 
-		int adjacency_matrix[][] = {
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},  
-				{0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0},  
-				{0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0},  
-				{0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0},  
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-				{0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
-		};
- 
-		DFSMatrix dfs = new DFSMatrix();
- 
-		System.out.println("\nDFS Stack: ");
-		dfs.dfsStack(adjacency_matrix, nodes.get(8));
- 
-		System.out.println();
- 
-		clearVisited();
- 
-		System.out.println("\nDFS Recursive: ");
-		dfs.dfsRecursive(adjacency_matrix, nodes.get(1));
- 
+    
+    int adjacency_matrix[][] = {
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 1, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0},
+      {0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+      {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+    };
+    DFSMatrix dfs = new DFSMatrix();
+    System.out.println("\nDFS Stack: ");
+    dfs.dfsStack(adjacency_matrix, nodes.get(8));
+    System.out.println();
+
+    clearVisited();
+
+    System.out.println("\nDFS Recursive: ");
+    dfs.dfsRecursive(adjacency_matrix, nodes.get(1));
     System.out.println();
 	}
   

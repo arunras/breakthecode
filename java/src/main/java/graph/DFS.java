@@ -80,14 +80,12 @@ public class DFS {
     node9.addAdjNode(node10);
     node9.addAdjNode(node11);
 
-
     DFS dfs = new DFS();
     System.out.println("\nDFS Stack: ");
     dfs.dfsStack(node1);
     System.out.println();
 
     // Reset visited
-     
     node1.visited = false;
     node2.visited = false;
     node3.visited = false;
