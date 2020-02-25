@@ -2,6 +2,7 @@ import java.util.*;
 
 import sorts.*;
 import recursion.*;
+import graph.*;
 
 public class Main {
 	
@@ -13,13 +14,12 @@ public class Main {
 
     
     //INPUT
-    int arr[] = {6, 5, 3, 7, 4, 1, 2, 9, 8, 0}; 
+    int data[] = {6, 5, 3, 7, 4, 1, 2, 9, 8, 0}; 
 
-    System.out.println("Arrays: " + Arrays.toString(arr));
-
-    MergeSort.sort(arr, 0, arr.length - 1);
-
-    System.out.println("Sorted: " + Arrays.toString(arr)); 
+    //System.out.println("Arrays: " + Arrays.toString(data));
+    
+    
+    GraphRepresentation.adjacencyMatrix(); 
 
 
     double end = System.currentTimeMillis();
