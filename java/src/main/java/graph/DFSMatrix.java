@@ -102,7 +102,7 @@ public class DFSMatrix {
     System.out.println("\nDFS Recursive: ");
     dfs.dfsRecursive(adjacency_matrix, nodes.get(1));
     System.out.println();
-	}
-  
+  }
+
 }
 
