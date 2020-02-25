@@ -8,8 +8,8 @@ public class DFS {
   // Node : Adjacency List
   private static class Node {
     private int data;
-    private List<Node> adjNodes;
     private boolean visited;
+    private List<Node> adjNodes;
 
     public Node(int data) {
       this.data = data;
@@ -45,17 +45,16 @@ public class DFS {
 
   // Recursive DFS
   public void dfsRecursive(Node node) {
-    node.visited = true;
     System.out.print(" > " + node.data);
-    for (Node adjNode: node.getAdjNodes()) {
-      if (!adjNode.visited) {
-        dfsRecursive(adjNode);
+    node.visited = true;
+    for (Node v: node.getAdjNodes()) {
+      if (!v.visited) {
+        dfsRecursive(v);
       }
     }
   }
 
-  public static void main(String arg[])
-	{
+  public static void main(String arg[]) {
 
 		Node node1 = new Node(1);
 		Node node2 = new Node(2);
@@ -84,7 +83,7 @@ public class DFS {
 
 		DFS dfs = new DFS();
 
-		System.out.println("DFS stack: ");
+		System.out.println("\nDFS stack: ");
 		dfs.dfsStack(node1);
 
 		System.out.println();
