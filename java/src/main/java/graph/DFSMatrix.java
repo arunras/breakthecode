@@ -23,7 +23,7 @@ public class DFSMatrix {
 
     for (int i = 0; i < nodes.size(); i++) {
       if (nodes.get(i).equals(node)) {
-        for (int j = 0; j < adjMatrix.length; j++) {
+        for (int j = 0; j < adjMatrix[i].length; j++) {
           if (adjMatrix[i][j] == 1) {
             adjNodes.add(nodes.get(j));
           }
