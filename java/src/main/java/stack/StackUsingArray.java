@@ -17,7 +17,7 @@ public class StackUsingArray {
       A[top] = e;
       System.out.println("Pushed: " + e);
     } else {
-
+      System.out.println("Stack is full.");
     }
   }
 

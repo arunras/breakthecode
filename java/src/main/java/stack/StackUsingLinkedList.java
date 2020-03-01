@@ -6,7 +6,7 @@ public class StackUsingLinkedList {
     Node next;
   }
 
-  public Node head;
+  private Node head;
 
   public void push(int data) {
     Node node = new Node();
