@@ -1,3 +1,4 @@
+// Link: https://leetcode.com/problems/implement-stack-using-queues/
 package stack;
 
 import java.util.Queue;
@@ -27,3 +28,4 @@ public class StackUsingOneQueue {
     return q.isEmpty();
   }
 }
+
