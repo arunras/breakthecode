@@ -7,12 +7,12 @@ public class LinkedList {
     return (head == null);
   }
 
-  public void addFirst(Node node) {
+  public void insertFirst(Node node) {
     node.next = head;
     head = node;  
   }
 
-  public void addLast(Node node) {
+  public void insertLast(Node node) {
     if (head == null) {
       head = node;
     } else {
@@ -89,37 +89,16 @@ public class LinkedList {
 
   // Link: 
   public Node findNNodeFromEnd(Node head, int n) {
-    Node first, second; 
-    first = second = head;
-    int i = 0;
-    while (first != null) {
-      first = first.next;
-      if (i >= n) {
-        second = second.next;
-      } 
-      i++;
-    }
-    return second;
-  }
-
-  // Link: https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-  public Node removeNNodeFromEnd(Node head, int n) {
-    Node dummy = new Node(0);
-    dummy.next = head;
     Node first, second;
-    first = second = dummy;
-    Node connector = null;
-    int i = 0;
+    first = second = head;
+    int i = 1;
     while (first != null) {
       first = first.next;
-      connector = second;
       if (i >= n) {
-        second = second.next;
+
       }
-      i++;
+      i++; 
     }
-    connector.next = second.next;
-    return dummy.next;
   }
 //===Algorithms==========================================================
 }
