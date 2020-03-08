@@ -118,7 +118,7 @@ public class LinkedList {
       }
       i++;
     }
-    connector.next = second.next;
+    connector.next = null;//second.next;
     return dummy.next;
   }
 
@@ -134,7 +134,34 @@ public class LinkedList {
     }
     return false;
   }
-//===Algorithms==========================================================
+
+  public Node findStartNodeOfLoop(Node head) {
+    Node slow, fast;
+    slow = fast = head;
+    boolean isLoop = false;
+    while (fast != null && fast.next != null) {
+      fast = fast.next.next;
+      slow = slow.next;
+      if (slow == fast) {
+        isLoop = true;
+        System.out.println("There is a loop.");
+        break;
+      }
+    }
+    if (isLoop) {
+      slow = head;
+      while (slow != fast) {
+        slow = slow.next;
+        fast = fast.next;
+      }
+      System.out.println("Start Node: " + slow.data);
+    } else {
+      System.out.println("There is no loop.");
+      slow = null;
+    }
+    return slow;
+  }
+//===algorithms==========================================================
 }
 
 
