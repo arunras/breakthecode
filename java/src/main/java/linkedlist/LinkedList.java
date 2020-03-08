@@ -161,6 +161,21 @@ public class LinkedList {
     }
     return slow;
   }
+
+  // Link: https://leetcode.com/problems/remove-linked-list-elements/
+  public Node removeNodes(Node head, int data) {
+    Node dummy = new Node(0);
+    dummy.next = head;
+    Node current = dummy;
+    while (current.next != null) {
+      if (current.next.data == data) {
+        current.next = current.next.next;
+      } else {
+        current = current.next;
+      }
+    }
+    return dummy.next;
+  }
 //===algorithms==========================================================
 }
 
