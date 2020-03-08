@@ -121,6 +121,19 @@ public class LinkedList {
     connector.next = second.next;
     return dummy.next;
   }
+
+  // Link: https://leetcode.com/problems/linked-list-cycle/
+  public boolean hasCycle(Node head) {
+    Node slow, fast;
+    slow = fast = head;
+    while (fast != null && fast.next != null) {
+      fast = fast.next.next;
+      slow = slow.next;
+      if (slow == fast) 
+        return true;
+    }
+    return false;
+  }
 //===Algorithms==========================================================
 }
 
