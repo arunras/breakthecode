@@ -48,7 +48,7 @@ public class LinkedList {
     }
   }
 
-  public void printLinkedList(Node head, String title) {
+  public void printList(Node head, String title) {
     System.out.println(title);
     Node current = head;
     while (current != null) {
@@ -192,6 +192,48 @@ public class LinkedList {
       }
     }
     return true;
+  }
+
+  public Node findIntersectionNode(Node head1, Node head2) {
+    int length1, length2;
+    length1 = length2 = 0;
+    Node temp1 = head1;
+    Node temp2 = head2;
+    while (temp1 != null) {
+      length1++;
+      temp1 = temp1.next;
+    }
+    while (temp2 != null) {
+      length2++;
+      temp2 = temp2.next;
+    }
+    int difference = 0;
+    Node first = head1;
+    Node second = head2;
+    if (length1 > length2) {
+      difference = length1 - length2;
+      int i = 0;  
+      while (i < difference) {
+        first = first.next;
+        i++;
+      }
+    }  
+    if (length2 > length1) {
+      difference = length2 - length1;
+      int i = 0;  
+      while (i < difference) {
+        second = second.next;
+        i++;
+      }
+    } 
+    while (first != null && second !=null) {
+      if (first == second) {
+        return first;
+      }
+      first = first.next;
+      second = second.next;
+    }
+    return null;
   }
 //===algorithms==========================================================
 }
