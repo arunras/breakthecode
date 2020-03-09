@@ -176,6 +176,23 @@ public class LinkedList {
     }
     return dummy.next;
   }
+
+  public boolean isPalindrome(Node head) {
+    Node middle = findMiddleNode(head);
+    Node secondHead = middle.next;
+    middle.next = null;
+    Node reverseHead = reverseLinkedList(secondHead);
+    while (head != null && reverseHead != null) {
+      if (head.data == reverseHead.data) {
+        head = head.next;
+        reverseHead = reverseHead.next;
+        continue;
+      } else {
+        return false;
+      }
+    }
+    return true;
+  }
 //===algorithms==========================================================
 }
 
