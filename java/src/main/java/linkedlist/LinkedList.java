@@ -236,10 +236,13 @@ public class LinkedList {
     return null;
   }
 
-  public Node reverseLinkedListInPair(Node head) {
+  // leetcode: https://leetcode.com/problems/swap-nodes-in-pairs/
+  public Node swapPairs(Node head) {
+    if (head != null && head.next == null)
+      return head;
     Node current = head;
-    Node temp = null;
     Node newHead = null;
+    Node temp = null;
     while (current != null && current.next != null) {
       if (temp != null) 
         temp.next.next = current.next;
