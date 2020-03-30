@@ -2,7 +2,7 @@ package tree;
 
 import java.util.Stack;
 
-public class PreOrder {
+public class PreOrderTree {
 
   public void preorderRecursive(TreeNode root) {
     if (root != null) {
