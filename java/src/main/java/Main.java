@@ -1,10 +1,7 @@
-import java.util.*;
+import java.util.Scanner;
 
-import sorts.*;
-import recursion.*;
-import graph.*;
-import patterns.slidding_window.*;
-import stack.*;
+import leetcode.CellCompete;
+import leetcode.PrisonCells;
 
 public class Main {
 	
@@ -12,31 +9,33 @@ public class Main {
     Scanner in = new Scanner(System.in);
     //int[] primeSet = {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97};
     double start = System.currentTimeMillis(); 
+    
+    //==INPUT
+    //int data[] = {1,1,2,2}; //{6, 5, 3, 7, 4, 1, 2, 9, 8}; 
+    int[][] data = {{1,3,1},{1,5,1},{4,2,1}};
+    //System.out.println("Arrays: " + Arrays.toString(data));
+//====TEST===============================================
+    
+    int[] A = {1,0,0,0,0,1,0,0};
+    int days = 1;
+    int[] Ar = {0,0,0,0,0,1,1,0};
+    
+    int[] B = {1,1,1,0,1,1,1,1};
+    days = 2;
+    int[] Br = {0,1,0,0,1,0,1,0};
 
     
-    //INPUT
-    int data[] = {6, 5, 3, 7, 4, 1, 2, 9, 8, 0}; 
-
-    //System.out.println("Arrays: " + Arrays.toString(data));
-
-    StackUsingArray stack = new StackUsingArray(10);
-		stack.pop();
-		System.out.println("=================");
-		stack.push(10);
-		stack.push(30);
-    stack.peek(); 
-		stack.push(50);
-		stack.push(40);
-		System.out.println("=================");
-    stack.peek();
-		System.out.println("=================");
-		stack.pop();
-		stack.pop();
-		stack.pop();
-		System.out.println("=================");
+    System.out.print("Output: { ");
+    for (int c : CellCompete.cellCompete(B, days)) {
+    	System.out.print(c + " ");
+    }
+    System.out.print("}");
+    
+    
+//====TEST==============================================
 
     double end = System.currentTimeMillis();
-    System.out.println("Time: " + ((end - start) / 1000) + "s");
+    System.out.println("\nTime: " + ((end - start) / 1000) + "s");
 	}
 
 }

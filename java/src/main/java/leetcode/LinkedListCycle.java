@@ -4,6 +4,7 @@ package leetcode;
 
 public class LinkedListCycle {
 
+	/*
   public boolean hasCycle(ListNode head) {
     ListNode slow, fast;  
     slow = fast = head;
@@ -15,5 +16,6 @@ public class LinkedListCycle {
     }
     return false;
   }
+  */
 
 }

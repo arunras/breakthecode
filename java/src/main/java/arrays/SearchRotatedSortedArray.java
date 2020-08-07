@@ -10,5 +10,6 @@ public class SearchRotatedSortedArray {
 
     }
 
+    return 0;
   }
 }
