@@ -1,4 +1,4 @@
-import leetcode.CoinChange;
+import math.Fibonacci;
 
 public class Main {
 	
@@ -6,10 +6,9 @@ public class Main {
     double start = System.currentTimeMillis(); 
 //====TEST===============================================
     
-    int[] coins = {1,2,5};
-    int amount = 11;
+    int n = 5;
 
-    System.out.print("Output: " + CoinChange.change(coins, amount));
+    System.out.print("Output: " + Fibonacci.fibDp(n));
     
     
 //====TEST==============================================
