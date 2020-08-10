@@ -1,4 +1,4 @@
-import math.Fibonacci;
+import leetcode.dp.*;
 
 public class Main {
 	
@@ -6,9 +6,9 @@ public class Main {
     double start = System.currentTimeMillis(); 
 //====TEST===============================================
     
-    int n = 5;
+    int[] prices = {7, 1, 5, 3, 6, 4};
 
-    System.out.print("Output: " + Fibonacci.fibDp(n));
+    System.out.print("Output: " + BuySellStock2.maxProfit(prices));
     
     
 //====TEST==============================================
