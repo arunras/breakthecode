@@ -6,9 +6,9 @@ public class Main {
     double start = System.currentTimeMillis(); 
 //====TEST===============================================
     
-    int[] prices = {7, 1, 5, 3, 6, 4};
+    int[] prices = {7,6,4,3,1};
 
-    System.out.print("Output: " + BuySellStock2.maxProfit(prices));
+    System.out.print("Output: " + BuySellStock1.maxProfit(prices));
     
     
 //====TEST==============================================
