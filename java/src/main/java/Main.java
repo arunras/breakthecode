@@ -1,4 +1,4 @@
-import leetcode.dp.*;
+import leetcode.tree.*;
 
 public class Main {
 	
@@ -6,9 +6,11 @@ public class Main {
     double start = System.currentTimeMillis(); 
 //====TEST===============================================
     
-    int[] prices = {7,6,4,3,1};
+    int[] preorder = {8,5,1,7,10,12};
 
-    System.out.print("Output: " + BuySellStock1.maxProfit(prices));
+    System.out.print("Output: [");
+    System.out.print(BSTPreorder.bstFromPreorder(preorder).toString());
+    System.out.print("]");
     
     
 //====TEST==============================================
