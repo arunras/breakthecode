@@ -1,4 +1,4 @@
-import leetcode.tree.*;
+import leetcode.amazon.*;
 
 public class Main {
 	
@@ -6,11 +6,14 @@ public class Main {
     double start = System.currentTimeMillis(); 
 //====TEST===============================================
     
-    int[] preorder = {8,5,1,7,10,12};
+    char[][] grid = {
+  {'1','1','0','0','0'},
+  {'1','1','0','0','0'},
+  {'0','0','1','0','0'},
+  {'0','0','0','1','1'}};
+    
 
-    System.out.print("Output: [");
-    System.out.print(BSTPreorder.bstFromPreorder(preorder).toString());
-    System.out.print("]");
+    System.out.print("Output: " + NumberOfIslands.find(grid));
     
     
 //====TEST==============================================

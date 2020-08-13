@@ -1,6 +1,6 @@
 // https://leetcode.com/discuss/interview-question/762546/
 
-package leetcode;
+package leetcode.amazon;
 
 public class AmazonFreshPromotion {
 
