@@ -6,14 +6,11 @@ public class Main {
     double start = System.currentTimeMillis(); 
 //====TEST===============================================
     
-    char[][] grid = {
-  {'1','1','0','0','0'},
-  {'1','1','0','0','0'},
-  {'0','0','1','0','0'},
-  {'0','0','0','1','1'}};
-    
+    String s = "abcabc"; 
+    int k = 3; 
 
-    System.out.print("Output: " + NumberOfIslands.find(grid));
+    System.out.println("Input: " + s);
+    System.out.print("Output: " + SubstringOfSizeK.find(s, k).toString());
     
     
 //====TEST==============================================

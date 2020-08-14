@@ -19,16 +19,16 @@ public class NumberOfIslands {
     return islands;
   }
   
-  private static int dfs(char[][] ocean, int x, int y) {
-    if (x < 0 || x >= ocean.length || y < 0 || y >= ocean[0].length || ocean[x][y] != '1') {
+  private static int dfs(char[][] grid, int x, int y) {
+    if (x < 0 || x >= grid.length || y < 0 || y >= grid[0].length || grid[x][y] != '1') {
       return 0;
     }
     
-    ocean[x][y] = '2';
-    dfs(ocean, x - 1, y);
-    dfs(ocean, x, y + 1);
-    dfs(ocean, x + 1, y);
-    dfs(ocean, x, y - 1);
+    grid[x][y] = '2';
+    dfs(grid, x - 1, y);
+    dfs(grid, x + 1, y);
+    dfs(grid, x, y - 1);
+    dfs(grid, x, y + 1);
 
     return 1;
   }
