@@ -9,7 +9,9 @@ public class ReorderList {
     if (head == null || head.next == null || head.next.next == null) return head;
     
     ListNode first = head;
-    ListNode second = reverse(getMid(head));
+    ListNode mid = getMid(head);
+    ListNode second = reverse(mid.next);
+    mid.next = null;
     while (second != null) {
       ListNode firstNext = first.next;
       ListNode secondNext = second.next;
